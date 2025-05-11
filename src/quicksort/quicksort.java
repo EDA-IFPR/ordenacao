@@ -21,4 +21,8 @@ public class quicksort {
         result.addAll(quicksort(maiores));
         return result;
     }
+
+    public static void main(String[] args) {
+        System.out.println(quicksort(List.of(10, 3, 9, 0, 12, 4, 2)));
+    }
 }
