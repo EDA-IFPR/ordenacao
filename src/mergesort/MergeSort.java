@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class MergeSort {
     public static int[] mergeSort(int[] array, int zero, int fim) {
-        if (zero < fim) {
+        if (fim > zero) {
             int meio = (zero + fim) / 2;
 
             mergeSort(array, zero, meio);
