@@ -3,13 +3,13 @@ package mergesort;
 import java.util.Arrays;
 
 public class MergeSort {
-    public static int[] mergeSort(int[] array, int zero, int fim) {
-        if (fim > zero) {
-            int meio = (zero + fim) / 2;
+    public static int[] mergeSort(int[] array, int indiceComeco, int indiceFim) {
+        if (indiceFim > indiceComeco) {
+            int meio = (indiceComeco + indiceFim) / 2; // 1.5 -> java joga p baixo -> 1
 
-            mergeSort(array, zero, meio);
-            mergeSort(array, meio + 1, fim);
-            mergeia(array, zero, meio, fim);
+            mergeSort(array, indiceComeco, meio);
+            mergeSort(array, meio + 1, indiceFim);
+            mergeia(array, indiceComeco, meio, indiceFim);
         }
         return array;
     }
